@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="styling.js" defer></script>
+    <title>Dynamic Styling</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="changeColor()">Click here to change the color</div>
+    <div class="circle" onmouseover="changeShape(this)" onmouseout="resetShape(this)"></div>
+    <button onclick="toggleVisibility()">Change vivibility</button>
+    <p id="text">Hover over this text.</p>
+    <div id="reset" onclick="resetStyles()"> Reset All</div>
+</body>
+</html> 
